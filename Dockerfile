@@ -7,7 +7,7 @@ RUN apt-get update
 
 # pandoc: https://pandoc.org
 ADD https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb /tmp/pandoc.deb
-RUN apt-get -y install /tmp/pandoc.deb texlive-full
+RUN apt-get -o APT::Install-Suggests="true" -y install /tmp/pandoc.deb texlive-full
 
 # wkhtmltopdf: https://wkhtmltopdf.org
 RUN apt-get -y install wkhtmltopdf
