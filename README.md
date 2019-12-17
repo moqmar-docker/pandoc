@@ -11,7 +11,13 @@ following software:
 - Templates & Scripts:
   - [Pandocomatic](https://heerdebeer.org/Software/markdown/pandocomatic/)
   - [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template)
-    in `/opt/eisvogel` with the alias `eisvogel` 
+    in `/opt/eisvogel` with the alias `eisvogel`
+  - If you're missing something here, feel free to [open an issue](https://github.com/moqmar-docker/pandoc/issues)
+
+**Roadmap:**
+- Add a few HTML-based templates for basic Markdown documents
+- Add `to-html` and `to-pdf` scripts for very simple conversion of mixed
+  Markdown/LaTeX documents
 
 ## Examples
 **Basic Usage:**
