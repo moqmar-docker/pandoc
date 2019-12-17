@@ -24,7 +24,6 @@ RUN gem install pandocomatic
 ADD https://github.com/Wandmalfarbe/pandoc-latex-template/releases/download/v${EISVOGEL_VERSION}/Eisvogel-${EISVOGEL_VERSION}.tar.gz /tmp/eisvogel.tar.gz
 RUN mkdir /opt/eisvogel && tar -C/opt/eisvogel/ -xvf /tmp/eisvogel.tar.gz
 ADD eisvogel /usr/local/bin/eisvogel
-RUN chmod +x /usr/local/bin/eisvogel
 
 # TODO: add more templates
 
