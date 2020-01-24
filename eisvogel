@@ -2,6 +2,8 @@
 
 pandoc \
   --from markdown+autolink_bare_uris+implicit_figures \
-  --template /opt/eisvogel/eisvogel.tex --listings --standalone --number-sections \
-  --filter pandoc-citeproc \
+  --template /opt/eisvogel/eisvogel.tex --standalone --pdf-engine=xelatex \
+  --number-sections --top-level-division=chapter \
+  -V codeBlockCaptions=true -Mlistings --listings \
+  --filter pandoc-crossref --filter pandoc-citeproc \
   "$@"
