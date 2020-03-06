@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pandoc \
-  --from markdown+autolink_bare_uris+implicit_figures \
+  --from markdown+autolink_bare_uris+implicit_figures+grid_tables \
   --template /opt/eisvogel/eisvogel.tex --standalone --pdf-engine=xelatex \
   --number-sections --top-level-division=chapter \
   -V codeBlockCaptions=true -Mlistings --listings \

@@ -25,6 +25,9 @@ RUN gem install pandocomatic
 RUN apt-get install -y wget && wget https://github.com/lierdakil/pandoc-crossref/releases/download/v${CROSSREF_VERSION}/linux-pandoc_$(echo ${PANDOC_VERSION} | sed 's/\./_/g').tar.gz -O /tmp/crossref.tar.gz
 RUN tar -C/usr/bin -xvf /tmp/crossref.tar.gz ./pandoc-crossref
 
+# pandoc-latex-admonition
+RUN pip3 install pandoc-latex-admonition
+
 # eisvogel: https://github.com/Wandmalfarbe/pandoc-latex-template
 ADD https://github.com/Wandmalfarbe/pandoc-latex-template/releases/download/v${EISVOGEL_VERSION}/Eisvogel-${EISVOGEL_VERSION}.tar.gz /tmp/eisvogel.tar.gz
 RUN mkdir /opt/eisvogel && tar -C/opt/eisvogel/ -xvf /tmp/eisvogel.tar.gz
