@@ -18,6 +18,7 @@ following software:
 - Add a few HTML-based templates for basic Markdown documents
 - Add `to-html` and `to-pdf` scripts for very simple conversion of mixed
   Markdown/LaTeX documents
+- Try out R Markdown?
 
 ## Examples
 **Basic Usage:**
